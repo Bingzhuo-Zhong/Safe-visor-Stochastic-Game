@@ -68,26 +68,26 @@ To plot the simulation experiment results, we run `python plot.py`.
 
 #### Training and testing of the DNNs agent
 The training of the DNNs agent is done in python using TensorFlow framework. All codes for the training and
-the testing can be found in the folder “Training DNNs controller”. To run the training, one should generate
-configuration files first. One can also use the configuration file ( “./config/ddpg drn.json”) which is used
+the testing can be found in the folder “Training DNNs controller”. To run training, one should generate
+configuration files first. One can also use the configuration file ( “./config/ddpg_drn.json”) which is used
 for the experiments in this paper. We define the main entrance for training and testing in the python script
-“main ddpg.py”. And the training and testing can be executed via running the script “ python main ddpg.py”
-with specified parameters (detail parameters can be found in the code). Examples are listed as follows:
+“main_ddpg.py”. And training and testing can be executed via running the script “ python main_ddpg.py”
+with specified parameters (detailed parameters can be found in the code). Examples are listed as follows:
 
 - Generating new configuration file: 
-`python main ddpg.py −−generate config`
+`python main_ddpg.py −−generate_config`
 - Running training: 
-`python main ddpg.py −−config [path-to-config-files] −−mode train`
+`python main_ddpg.py −−config [path-to-config-file] −−mode train`
 - Running testing: 
-`python main ddpg.py −−config [path-to-config-files] −−mode test −−weights [path-to-pretrained model]`
+`python main_ddpg.py −−config [path-to-config-file] −−mode test −−weights [path-to-pretrained-model]`
 
-One can use the pre-trained model provided for a quick testing. The pre-trained model can be found in the
-folder ‘pretrained model’. To visualize the testing, one can change the visualization parameter in the running
+One can use the pre-trained model provided for a quick test. The pre-trained model can be found in the
+folder ‘pretrained_model’. To visualize the testing, one can change the visualization parameter in running
 command, for example:
 
 - Running testing with pretrained model and visualization:
-`python main ddpg.py −−config config/ddpg drn.json −−mode test −−weights pretrained model
-−−params stats params/visualize eval true`
+`python main_ddpg.py −−config config/ddpg_drn.json −−mode test −−weights pretrained_model
+−−params stats_params/visualize_eval true`
 
 
 ### References

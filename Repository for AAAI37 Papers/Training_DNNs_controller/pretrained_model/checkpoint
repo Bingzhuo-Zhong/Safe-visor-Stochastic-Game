@@ -1,0 +1,2 @@
+model_checkpoint_path: "critic_target_weights"
+all_model_checkpoint_paths: "critic_target_weights"

@@ -40,7 +40,7 @@ The following software/toolboxes for **MATLAB** are required for using the codes
  
 Next, we provide a brief introduction to how to use the files in this folder to synthesize synthesizing the correct-by-construction controller and the Safe-visor architecture in [4]. You can readily adapt these codes to your model after installing the software/toolboxes above.
 
-### Repository for AAAI37 Papers:
+### Repository for AAAI37 Paper:
 Here is a brief introduction to synthesizing the Safe-visor architecture, training an AI-based agent, and simulating the results in [4].
 #### Construction of Safe-visor architecture in the paper:  
 To synthesize the Safe-visor architecture in MATLAB, you need to install the software mentioned above and add the folder "Safe_visor_Architecture_for_Stochastic_Game". The codes for synthesizing the Safe-visor Architecture $sva_E$ and $sva_N$ locate in the folders ***Quadrotor\_4dim\_A\_E*** and **Quadrotor\_4dim\_A\_N**, respectively. To synthesize $sva_E$, one should:
@@ -67,6 +67,27 @@ To plot the simulation experiment results, we run `python plot.py`.
 
 
 #### Training and testing of the DNNs agent
+The training of the DNNs agent is done in python using TensorFlow framework. All codes for the training and
+the testing can be found in the folder “Training DNNs controller”. To run the training, one should generate
+configuration files first. One can also use the configuration file ( “./config/ddpg drn.json”) which is used
+for the experiments in this paper. We define the main entrance for training and testing in the python script
+“main ddpg.py”. And the training and testing can be executed via running the script “ python main ddpg.py”
+with specified parameters (detail parameters can be found in the code). Examples are listed as follows:
+
+- Generating new configuration file: 
+`python main ddpg.py −−generate config`
+- Running training: 
+`python main ddpg.py −−config [path-to-config-files] −−mode train`
+- Running testing: 
+`python main ddpg.py −−config [path-to-config-files] −−mode test −−weights [path-to-pretrained model]`
+
+One can use the pre-trained model provided for a quick testing. The pre-trained model can be found in the
+folder ‘pretrained model’. To visualize the testing, one can change the visualization parameter in the running
+command, for example:
+
+- Running testing with pretrained model and visualization:
+`python main ddpg.py −−config config/ddpg drn.json −−mode test −−weights pretrained model
+−−params stats params/visualize eval true`
 
 
 ### References

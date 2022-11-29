@@ -71,8 +71,13 @@ To plot the simulation experiment results, we run `python plot.py`.
 
 ### References
 [1]  **B. Zhong**, M. Zamani, and M. Caccamo,  [Sandboxing controllers for stochastic Cyber-Physical Systems](https://link.springer.com/chapter/10.1007/978-3-030-29662-9_15), In: 17th International Conference on Formal Modelling and Analysis of Timed Systems (FORMATS), Lecture Notes in Computer Science (VOL 11750), Springer, 2019.
+
 [2] **B. Zhong**, A. Lavaei, H. Cao, M. Zamani, and M. Caccamo, [Safe-visor architecture for sandboxing (AI-based) unverified controllers in stochastic Cyber-Physical Systems](https://www.sciencedirect.com/science/article/pii/S1751570X2100100X?via%3Dihub), In: Nonlinear Analysis: Hybrid Systems, 43C, 2021
+
 [3] **B. Zhong**, A. Lavaei, M. Zamani, and M. Caccamo, [Automata-based controller synthesis for stochastic systems: A game framework via approximate probabilistic relations](https://doi.org/10.1016/j.automatica.2022.110696), In: Automatica, 147C, 2023.
+
 [4] **B. Zhong**, H. Cao, M. Zamani, and M. Caccamo, Towards Safe AI: Sandboxing DNNs-based Controllers in Stochastic Games, In Proceeding of the 37th AAAI Conference on Artificial Intelligence, to appear
+
 [5]  **B. Zhong**, A. Lavaei, M. Zamani, and M. Caccamo,  [Poster abstract: Controller synthesis for nonlinear stochastic games via approximate probabilistic relations](https://doi.org/10.1145/3501710.3524732), In: Proceeding of 25th ACM International Conference on Hybrid Systems: Computation and Control (HSCC), ACM, 2022
+
 [6] A. Lavaei,  **B. Zhong**, and M. Caccamo, and M. Zamani,  [Towards trustworthy AI: safe-visor architecture for uncertified controllers in stochastic Cyber-Physical Systems](https://dl.acm.org/doi/abs/10.1145/3457335.3461705), In: Proceedings of the International Workshop on Computation-Aware Algorithmic Design for Cyber-Physical Systems (CAADCPS), ACM, 2021
